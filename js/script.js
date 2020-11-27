@@ -27,10 +27,23 @@ var studenti = [
   },
 ];
 console.log(studenti);
-// stapo il log di del valore di cognome e nome per ogni posizione nell'array
+
+
+// stapo il log della chiave nei valori cognome e nome per ogni posizione nell'array
 for (var i = 0; i < studenti.length; i++) {
   var studenteNome = studenti[i]['nome'];
   var studenteCognome = studenti[i]['cognome'];
 
   console.log('Nome: ' + studenteNome + ' ' + 'Cognome: ' + studenteCognome);
 }
+
+
+
+
+
+var nomeDaInserire = prompt('inserisci il nome');
+var cognomeDaInserire = prompt('inserisci il cognome');
+var etaDaInserire = prompt('inserisci il eta');
+studenti.push({nome : nomeDaInserire, cognome : cognomeDaInserire, eta : etaDaInserire});
+// // console.log(nome);
+console.log(studenti);
