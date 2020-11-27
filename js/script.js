@@ -36,14 +36,10 @@ for (var i = 0; i < studenti.length; i++) {
 
   console.log('Nome: ' + studenteNome + ' ' + 'Cognome: ' + studenteCognome);
 }
-
-
-
-
-
+// chiedo tramite prompt all'utente di inserire i propri dati e poi li pusho nell array
 var nomeDaInserire = prompt('inserisci il nome');
 var cognomeDaInserire = prompt('inserisci il cognome');
 var etaDaInserire = prompt('inserisci il eta');
 studenti.push({nome : nomeDaInserire, cognome : cognomeDaInserire, eta : etaDaInserire});
-// // console.log(nome);
+
 console.log(studenti);
