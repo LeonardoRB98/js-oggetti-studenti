@@ -37,9 +37,22 @@ for (var i = 0; i < studenti.length; i++) {
   console.log('Nome: ' + studenteNome + ' ' + 'Cognome: ' + studenteCognome);
 }
 // chiedo tramite prompt all'utente di inserire i propri dati e poi li pusho nell array
-var nomeDaInserire = prompt('inserisci il nome');
-var cognomeDaInserire = prompt('inserisci il cognome');
-var etaDaInserire = prompt('inserisci il eta');
-studenti.push({nome : nomeDaInserire, cognome : cognomeDaInserire, eta : etaDaInserire});
+//metodo 1 push
+// var nuovoStudente = {};
+// nuovoStudente.nome = prompt('inserisci il nome');
+// nuovoStudente.cognome = prompt('inserisci il cognome');
+// nuovoStudente.eta = prompt('inserisci il eta');
+// studenti.push(nuovoStudente);
 
+//metodo 2 push
+var nomePrompt = prompt('inserisci il nome');
+var cognomePrompt = prompt('inserisci il cognome');
+var etaPrompt = prompt('inserisci il eta');
+var nuovoStudente = {
+  nome : nomePrompt,
+  cognome : cognomePrompt,
+  eta : etaPrompt,
+};
+
+studenti.push(nuovoStudente);
 console.log(studenti);
