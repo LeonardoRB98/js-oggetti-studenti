@@ -9,6 +9,19 @@
 
 
 // creo array bidimensionale con proprietà nome, congnome ed proprietà
+// array studente singolo
+var studente = {
+  'nome' : 'francesco',
+  'cognome' : 'ferraro',
+  'eta' : 30,
+};
+// stampo tutte le key di studente tramite for in
+for (var key in studente) {
+  console.log(studente[key]);
+}
+
+
+
 var studenti = [
   {
     'nome' : 'leonardo',
